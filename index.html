@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Application — Data Visualization &amp; Journalism</title>
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=literata"
+            rel="stylesheet">
+
+        <link href="https://fonts.bunny.net/css?family=im-fell-double-pica-sc"
+            rel="stylesheet" />
+        <link href="https://fonts.bunny.net/css?family=playfair:400,700"
+            rel="stylesheet">
+        <link href="https://fonts.bunny.net/css?family=playfair-display:400,700"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="too-narrow-message">
+            <p style="font-size:1.5em;">Sorry!</p>
+            <p>This page is meant to be seen in a bigger screen.</p></div>
+        <div class="main-content">
+            <div class="pdf-viewer">
+
+                <!-- ── Pages ── -->
+                <div class="pages-container">
+                    <!-- Page 1 · Cover -->
+                    <div class="page" id="page-1">
+                        <div class="page-inner">
+
+                            <div class="three-col" style="height:40px;">
+                                <div class="col"
+                                    style="border:1px solid black; display:flex; align-items:center; text-align:center;">
+                                    <p style="text-indent:0em">"All the News That's Fit to Print(?)"</p>
+                                </div>
+                                <div class="col" id="title">
+                                        The Aspiring Correspondent
+                                </div>
+                                <div class="col" style="line-height: 1;">
+                                    <p style="text-align: center; font-family:sans;font-weight:bolder; font-size:11px;line-height:1;"> THE
+                                        WEATHER</p>
+                                    <p
+                                        style="text-align: justify; font-size: 10px; line-height: 1.2;">
+                                        <strong>Today,</strong> some sun then turning even more sunny, high 37°C. 
+                                        <strong>Tonight,</strong> clear, low 28°C. <strong>Tomorrow,</strong> sunny again 38°C.</p>
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="three-col"
+                                style="height:25px; border-bottom:1px solid black; border-top:2px solid black;margin-top:10px;margin-bottom:5px;">
+                                <div class="col">
+                                    <p>Vol. XVII</p>
+                                </div>
+                                <div class="col" style="text-align:center;">
+                                    FRIDAY, MAY 29, 2026
+                                </div>
+                                <div class="col"
+                                    style="line-height: 1; text-align: right;">
+                                    <p> 4.00€</p>
+                                </div>
+                            </div>
+
+                            <div class="page-body">
+                                <div class="two-col-intro" id = "introduction">
+                                    <div class="col" style="padding-right:10px; height: 100px;">
+                                        <h3 style="font-size:27px;line-height:1; margin: 0;">TEC might have found the right candidate</h3>
+                                    </div>
+                                <div class ="col">
+                                    <p>I am Néstor. I am a UvA Psychology
+                                        graduate,
+                                        a
+                                        Computer Science student and a
+                                        professional
+                                        data
+                                        scientist. But I am not really that. I
+                                        am a
+                                        deeply curious individual. I am deeply
+                                        passionate about bringing clarity
+                                        through
+                                        words
+                                        and graphics. And I am also very
+                                        interested
+                                        in
+                                        the social and political future of
+                                        Europe
+                                        and
+                                        the world.</p>
+
+                                    <p>In this mock-newspaper I hope to convince
+                                        you
+                                        that I am a great fit for The European
+                                        Correspondent's Data Journalist
+                                        position.
+                                        For
+                                        that I have prepared a couple of sample
+                                        visualizations. I have described why I
+                                        think
+                                        I
+                                        match the position requirements. And
+                                        finally, I
+                                        have argued that my strengths in data
+                                        science
+                                        might just be what TEC needs.</p>
+                                </div>
+                                </div>
+                                <div class="two-col">
+                                    <div class="col">
+                                        <h3 style="font-family: 'IM Fell Double Pica SC', serif; font-style:normal;font-weight:400;font-size:25px;text-align:center;">FIRST SHOWCASE</h3>
+                                    <p>All too often when discussing complex phenomena, 
+                                        a single statistic rises as the sole measure of 
+                                        fitness or success. Regarding the wealth of nations, 
+                                        GDP gets the monopoly. And when looking at High Speed 
+                                        Train (HST) networks, the size in Km is the protagonist. 
+                                        This, of course, leaves out crucial details and can lead to 
+                                        ill-fated conclusions.</p>
+
+                                    <p>We add three metrics to the discussion: 
+                                        how much is the network used, how expensive was it to 
+                                        build and how much help came from the EU. We focus on the four major HST
+                                        etworks in Europe.</p>
+                                    
+
+                                        <div id="radarOutterChartFrame">
+                                            <svg id="radarFrame"
+                                                viewBox="0 0 500 700"
+                                                preserveAspectRatio="xMinYMin meet">
+                                                <g transform="translate(20,90)">
+                                                    <g id="Spain"
+                                                        transform="translate(100,400)"></g>
+                                                    <g id="France"
+                                                        transform="translate(200,260)"></g>
+                                                    <g id="Germany"
+                                                        transform="translate(350,200)"></g>
+                                                    <g id="Italy"
+                                                        transform="translate(330,370)"></g>
+                                                </g>
+                                            </svg>
+                                            <script type="module"
+                                                src="radarChart.js"></script>
+                                        </div>
+                                        <p>
+                                            The picture suddenly becomes much more complex. 
+                                            And interesting. <i>Spain's network is 10x the size of Italy's!</i> Yes, 
+                                            but each Km is twice as expensive to build in Italy, and it received 
+                                            20 times less EU funding to build it. <i>Germany and France are on a part 
+                                            regarding HST.</i> They do have a similar sized network, but France's is used 
+                                            twice as much.
+                                        </p>
+                                        <p>
+                                            By broadening our scope we not only get a better picture of the problem, we also pose new shaper questions. Why did Italy receive 20 times less EU funding than Spain to build its network? Why does France's network have such an intensive use? They too will need a holistic approach if they are to be reasonably answered.
+                                        </p>
+                                        <div style="border-top: 1px solid black;padding-top:0px; margin-top: 5px;">
+                                            <h3 style="font-size:25px;font-weight:normal;font-style:oblique;text-align:center;  "> Why I fit the role </h3>
+                                        </div>
+                                        
+
+                                        <p>I believe my skills match TEC's
+                                            needs.</p>
+
+                                        <p>Firstly, and perhaps most
+                                            importantly, I
+                                            have always been capable of thinking
+                                            creatively and finding stories
+                                            behind
+                                            data.
+                                            Throughout my education and career
+                                            as a
+                                            data
+                                            scientist, this was one of my
+                                            biggest
+                                            assets. It is also a big passion of
+                                            mine. In
+                                            this regard, I invite you to check
+                                            some stories from my <a href="https://txtos.eu/" style="color:black;"><i>personal blog</i>
+                                            </a></p>
+                                            <p>I have extensive experience with data
+                                            visualization tools.</p>
+                                    </div>
+                                    <div class="col">
+                                        <p style="text-indent:0em;"> Plotly,
+                                            matplotlib
+                                            or
+                                            ggplot for scientific content, and
+                                            D3
+                                            for
+                                            more demanding tasks. I also have
+                                            some
+                                            milage in web development, writing
+                                            front
+                                            and
+                                            back-ends as well as deploying apps. With
+                                            this knowledge I could help TEC
+                                            bring
+                                            certain publications to the next
+                                            level,
+                                            adding interactive pages and
+                                            developing
+                                            new
+                                            product lines. My biggest strength,
+                                            though,
+                                            is data analysis. Which I believe
+                                            can be
+                                            my
+                                            <a href="#ds_need" style ="color:black;font-style:italic;">main contribution to the team</a>.
+                                            </p>
+
+                                        <p>Thirdly, although not formally
+                                            trained, I
+                                            think I posses some eye for design.
+                                            This,
+                                            though, you may judge for yourself
+                                            based
+                                            on
+                                            this site and the charts in them. I
+                                            will
+                                            only add that I have worked with
+                                            Figma,
+                                            although I am no expert.</p>
+                                        <p>Finally, I am fluent in English, my
+                                            adoptive
+                                            tongue, and Spanish, my native
+                                            tongue. I
+                                            can
+                                            also speak Catalan and I have around
+                                            a
+                                            B2-level of French. I feel deeply
+                                            connected
+                                            to Europe, with at least one good
+                                            friend,
+                                            family member or acquaintance in
+                                            each
+                                            country. I have some understanding
+                                            of
+                                            the
+                                            institutions, and a couple family
+                                            members
+                                            working in them.</p>
+                                        <div style="border-top: 1px solid black; margin-top: 8px;">
+                                            <h3 style="font-family: 'IM Fell Double Pica SC', serif; font-style:normal;font-weight:400;font-size:25px;text-align:center;">SECOND SHOWCASE</h3>
+                                        </div>
+                                        <p>Home ownership is a symbol of wealth and financial stability. It means a higher net worth.Leads to reduced living costs. And generally implies a favorable economic situation,necessary to acquire it in the first place. It stands to reason, thus, that wealthier countries will see a higher percentage of home ownership.</p>
+                                        <div id="scatterOutterFrame">
+                                            <svg id="scatterFrame">
+                                                <g id="xAxis"></g>
+                                                <g id="yAxis"></g>
+                                                <path id = "outerTrendLine"></path>
+                                                <path id="trendLine"></path>
+                                            </svg>
+                                        </div>
+                                        <p>And reason would fail us in this case. In Europe, the richer the country, the smaller the proportion of people living in a house they own. Very counterintuitive and, therefore, also very interesting. 
+</p>
+                                        <p>Different explanations may be put forward. We discuss two. Firstly, the USSR is a crucial factor in this story. The poorer European countries are located in the East, and they were once soviet. Under communism most citizens lived in state-owned houses and, when the system collapsed in the 90s, this was no longer viable. So the state sold the houses to their occupants at a discount. And like that, eastern Europeans, residing in poorer countries, largely became home owners. A second important observation is that a rental market is not a granted thing. It requires some infrastructure, a reassuring legal framework and social normalization. Economists point out that this factors are more developed in the richer West.</p>
+
+                                        <script src="scatterPlot.js" type="module"></script>
+                                    </div>
+                                </div>
+                                <div class="two-col-intro" style="border-top: 1px solid black;margin-top:5px;">
+                                    <div class="col">
+                                    <h3 id="ds_need"style="font-size:40px;line-height:1;font-style:normal;text-align:center; margin-right: 5px; margin-top:10px;">Why TEC needs a data
+                                        scientist</h3>
+                                    </div>
+                                    <div class="col">
+                                    <p>Reading some of the great data journalism
+                                        out there one notices something: they
+                                        all
+                                        have high quality in-house data
+                                        analysis.
+                                        This is key for them to to offer unique
+                                        insights. The relationships they
+                                        uncover,
+                                        the clustering they propose or the
+                                        indexes
+                                        they develop are simply not available
+                                        anywhere else.</p>
+
+                                    <p>I deeply enjoy TEC's offering. It is
+                                        cool,
+                                        concise and relevant. But I sometimes
+                                        miss
+                                        this more sophisticated in-house
+                                        analysis of
+                                        the data. While visualizing existing
+                                        statistics is key to make them
+                                        accessible,
+                                        combining and exploiting them to create
+                                        new
+                                        unique conclusions gives you an
+                                        edge.</p>
+
+                                    <p>This is why I think TEC would greatly
+                                        benefit from more in house data
+                                        analysis.
+                                        And I would gladly take on this task.
+                                        After
+                                        years of experience, I am proficient in
+                                        methods ranging from classic statistics
+                                        to
+                                        modern NLP and machine learning. For example, you can check
+                                        <a href="https://txtos.eu/post/7" style="color:black;"><i>my latest story</i></a> where I show how a neighborhood's gentrification 
+                                        can be predicted based on the amount of specialty coffee shops it has.
+                                    </p>    
+                                    <p>Data
+                                        visualization is a big passion of my,
+                                        and an
+                                        area where I look forward to learning
+                                        from
+                                        you. Data analysis is my biggest
+                                        strength,
+                                        and a skill that I can add to TEC's
+                                        talent
+                                        pool.</p>
+                                    </div>
+                                    <div class="col" style="margin-top:5px;">
+                                        
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="page-number">I</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /pages-container -->
+            </div><!-- /pdf-viewer -->
+        </div>
+    </body>
+</html>
