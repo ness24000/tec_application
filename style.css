@@ -543,6 +543,7 @@ body {
     text-align: center;
     font-size: 15px;
     margin-top: 40vh;
+    max-width: 80%;
     background-color: #fff;
     opacity: 0.8;
     width: 400px;
